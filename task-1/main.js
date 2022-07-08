@@ -1,9 +1,11 @@
-const prompt = require('prompt');
-prompt.start();
+let str = "31,15,40"
+let arr = str.split(",")
+let min = arr[0]
 
 
-prompt.get('input', function (err, result) {
-  
-    // Write code here
-  
-});
+for (let i = 0; i < arr.length; i++) {
+    if( arr[i] < min ){
+        min = arr[i]
+    }
+    
+}console.log(min);

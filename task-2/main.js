@@ -1,9 +1,14 @@
-const prompt = require('prompt');
-prompt.start();
+let n = "328"
 
+let first = n[0]
+let last = n[n.length - 1]
 
-prompt.get('input', function (err, result) {
-  
-    // Write code here
-  
-});
+if( first > last ){
+    console.log(first);
+}
+else if( last > first ){
+    console.log(last);
+}
+else{
+    console.log("=");
+}

@@ -1,9 +1,9 @@
-const prompt = require('prompt');
-prompt.start();
+let str = "Hello world! Hello,    country!"
+let arr = str.split(" ")
+let count = 0
 
-
-prompt.get('input', function (err, result) {
-  
-    // Write code here
-  
-});
+for(let el of arr){
+    if(el != ""){
+        count++
+    }
+}console.log(count);

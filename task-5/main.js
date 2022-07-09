@@ -1,9 +1,8 @@
-const prompt = require('prompt');
-prompt.start();
+let str = "+5-2+4-m/n*2:4"
+let count = 0
 
-
-prompt.get('input', function (err, result) {
-  
-    // Write code here
-  
-});
+for(let el of str){
+    if(el == "+" || el == "-" || el == "*"){
+        count++
+    }
+}console.log(count);
